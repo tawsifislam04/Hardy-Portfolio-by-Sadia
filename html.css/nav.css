@@ -4,13 +4,9 @@ body {
 
 header {
     background-color: #FFF8F3;
-    background-image: url(../images/header_bg.png); 
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-image: url(../images/developer.png);
-    background-position: top left;
-    background-repeat: no-repeat;
-    
+    background-image: url('../images/header_bg.png'),  url('../images/developer.png');
+    background-repeat: no-repeat , no-repeat;
+    background-position: right bottom ,left;
 }
 
 main {
@@ -255,19 +251,32 @@ nav li {
 footer{
     display: flex;
     gap: 117px;
-    max-width: 1140px;
+    max-width: 1600px;
     margin: 0 auto;
     background-color: #FFF8F3;
+    padding: 120px 230px;
 
 }
-.contact,input[ text],input[submit]{
+.contact textarea,input[type="text"], .contact input[type="email"]{
     display: block;
-    gap: 24px;
+    margin-bottom: 24px;
     border-radius: 5px;
-    width: 100% auto;
+    width: 20%;
+    border: 0;
+    background-color: white;
+    padding: 18px 340px 18px 30px; 
+    
 }
-.footer-coloumn{
-    margin: 65px 143px 130px 64px;
+.footer-title{
+    font-size: 35px;
+    font-weight: 700;
+
+}
+.footer-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    max-width: 552px;
 }
 
 
